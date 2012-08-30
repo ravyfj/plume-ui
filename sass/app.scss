@@ -1,0 +1,104 @@
+// You custom settings file to override Foundation defaults
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// ----------------------------------------
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "compass/css3";
+// @import "foundation/settings";
+// @import "foundation/functions/all";
+// @import "foundation/common/globals";
+// @import "foundation/mixins/clearfix";
+// @import "modular-scale";
+
+// Control which mixins you have access too
+
+// @import "foundation/mixins/css-triangle";
+// @import "foundation/mixins/font-size";
+
+// Must include next two for semantic grid to work
+
+// @import "foundation/mixins/respond-to";
+// @import "foundation/mixins/semantic-grid";
+
+// Must include the grid for any responsiveness
+
+// @import "foundation/components/grid";
+
+// Control which common styles get compiled
+
+// @import "foundation/common/typography";
+// @import "foundation/common/forms";
+
+// Control which components you get if customizing
+
+// @import "foundation/components/modules/buttons";
+// @import "foundation/components/modules/tabs";
+// @import "foundation/components/modules/ui";
+// @import "foundation/components/modules/navbar";
+// @import "foundation/components/modules/orbit";
+// @import "foundation/components/modules/reveal";
+// @import "foundation/components/modules/offcanvas";
+ 
+.sidebar {}
+
+a {
+outline: 0;
+text-decoration: none;
+}
+dl.tabs.vertical {
+height: auto;
+border-bottom: 1px solid #E6E6E6;
+}
+dl.tabs {
+border-bottom: solid 1px #E6E6E6;
+display: block;
+height: 40px;
+padding: 0;
+margin-bottom: 20px;
+}
+dl.tabs.vertical dd {
+border-left: 3px solid #CCC;
+}
+dl.tabs.vertical dt, dl.tabs.vertical dd {
+float: none;
+height: auto;
+}
+
+dl.tabs dd:first-child {
+margin-left: 0;
+}
+dl.tabs dd {
+display: block;
+float: left;
+padding: 0;
+margin: 0;
+}
+dl.tabs.vertical dd a {
+background: #F2F2F2;
+border: none;
+border: 1px solid #E6E6E6;
+border-width: 1px 1px 0 0;
+color: #555;
+display: block;
+font-size: 14px;
+height: auto;
+line-height: 1;
+padding: 15px 20px;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+dl.tabs dd a {
+color: #6F6F6F;
+display: block;
+font-size: 14px;
+height: 40px;
+line-height: 40px;
+padding: 0 23.8px;
+}
+.subtopic {text-indent:20px; }
