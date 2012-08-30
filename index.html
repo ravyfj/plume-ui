@@ -29,6 +29,23 @@
 
 </head>
 <body onload="prettyPrint()">
+	<script type="text/javascript">
+		$(document).ready(function($) {
+	    $('.tabs .subtopic').hide();
+	    $('.tabs .topic a').click(function() {
+	        if ($(this).hasClass('selected')) {
+	            $(this).removeClass('selected');
+	            $(this).parent().nextUntil('.tabs .topic').slideUp();
+	        } else {
+	            $('.tabs .topic a').removeClass('selected');
+	            $(this).addClass('selected');
+	            $('.tabs .subtopic').slideUp();
+	            $(this).parent().nextUntil('.tabs .topic').slideDown();
+	        }
+	        return false;
+	    });
+		});​
+	</script>
 	<div class="row">
 		<ul class="nav-bar">
 		  <li class="active"><a href="#">Nav Item 1</a></li>
@@ -45,7 +62,17 @@
 	</div>
 	<div class="row">
 		<div class="four columns">
-
+			<dl class="nice vertical tabs">
+			  <dd class="topic active"><a href="#simple1">Overview</a></dd>
+			    <dd class="subtopic"><a href="#simple2">Subtopic 1</a></dd>
+			    <dd class="subtopic"><a href="#simple3">Subtopic 2</a></dd>
+			  <dd class="topic"><a href="#simple4">Quick Start</a></dd>
+			    <dd class="subtopic"><a href="#simple5">Subtopic 3</a></dd>
+			    <dd class="subtopic"><a href="#simple6">Subtopic 4</a></dd>
+			  <dd class="topic"><a href="#simple7">Next Steps</a></dd>
+			    <dd class="subtopic"><a href="#simple8">Subtopic 5</a></dd>
+			    <dd class="subtopic"><a href="#simple9">Subtopic 6</a></dd>
+			</dl>
 			<ul class="accordion">
         <li>
           <div class="title">

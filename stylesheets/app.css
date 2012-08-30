@@ -4194,18 +4194,12 @@ p.vevent abbr {
 }
 
 /* line 49, ../sass/app.scss */
-a {
-  outline: 0;
-  text-decoration: none;
-}
-
-/* line 53, ../sass/app.scss */
 dl.tabs.vertical {
   height: auto;
   border-bottom: 1px solid #E6E6E6;
 }
 
-/* line 57, ../sass/app.scss */
+/* line 53, ../sass/app.scss */
 dl.tabs {
   border-bottom: solid 1px #E6E6E6;
   display: block;
@@ -4214,23 +4208,23 @@ dl.tabs {
   margin-bottom: 20px;
 }
 
-/* line 64, ../sass/app.scss */
+/* line 60, ../sass/app.scss */
 dl.tabs.vertical dd {
   border-left: 3px solid #CCC;
 }
 
-/* line 67, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 dl.tabs.vertical dt, dl.tabs.vertical dd {
   float: none;
   height: auto;
 }
 
-/* line 72, ../sass/app.scss */
+/* line 68, ../sass/app.scss */
 dl.tabs dd:first-child {
   margin-left: 0;
 }
 
-/* line 75, ../sass/app.scss */
+/* line 71, ../sass/app.scss */
 dl.tabs dd {
   display: block;
   float: left;
@@ -4238,7 +4232,7 @@ dl.tabs dd {
   margin: 0;
 }
 
-/* line 81, ../sass/app.scss */
+/* line 77, ../sass/app.scss */
 dl.tabs.vertical dd a {
   background: #F2F2F2;
   border: none;
@@ -4255,7 +4249,7 @@ dl.tabs.vertical dd a {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
-/* line 96, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 dl.tabs dd a {
   color: #6F6F6F;
   display: block;
@@ -4265,7 +4259,7 @@ dl.tabs dd a {
   padding: 0 23.8px;
 }
 
-/* line 104, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
 .subtopic {
   text-indent: 20px;
 }
