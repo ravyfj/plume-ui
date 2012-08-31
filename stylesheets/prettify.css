@@ -28,7 +28,6 @@ li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
 
 
 /* Pretty printing styles. Used with prettify.js. */
-/* Bootstrap styles */
 
 code,
 pre {
@@ -90,7 +89,6 @@ pre code {
 }
 
 
-
 .com { color: #6e7f7f; }
 .lit { color: #195f91; }
 .pun, .opn, .clo { color: #818e8e; }
@@ -101,31 +99,44 @@ pre code {
 .pln { color: #2f2f33; }
 
 .prettyprint {
-  padding: 8px;
+  padding: 12px;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
 .prettyprint.linenums {
 	list-style-position: outside;
-  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+  -webkit-box-shadow: inset 37px 0 0 #fbfbfc, inset 38px 0 0 #ececf0;
+     -moz-box-shadow: inset 37px 0 0 #fbfbfc, inset 38px 0 0 #ececf0;
+          box-shadow: inset 37px 0 0 #fbfbfc, inset 38px 0 0 #ececf0;
 }
 
 /* Specify class=linenums on a pre to get line numbering */
+
 ol.linenums {
 	list-style-position: outside;
-  margin: 0 0 0 33px; /* IE indents via margin-left */
+  margin: 0; /* IE indents via margin-left */
+  counter-reset: item;
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: decimal-leading-zero; 
 } 
 ol.linenums li {
-  padding-left: 12px;
   color: #bebec5;
   line-height: 18px;
   text-shadow: 0 1px 0 #fff;
+  display: iblock;
+  margin-left: 2.4em;
 }
 
+ol.linenums li:before {
+  display: inline-block;
+  content: counter(item) " ";
+  counter-increment: item;
+  width: 2em;
+  margin-left: -2em; }
 
 /* For command line code styling */
+
 ul.linenums {
   list-style-position: outside;
   margin: 0 0 0 33px; /* IE indents via margin-left */
@@ -135,4 +146,8 @@ ul.linenums li {
   color: #bebec5;
   line-height: 18px;
   text-shadow: 0 1px 0 #fff;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
+
+
